@@ -15,3 +15,4 @@ public class LooseCouplingExample {
         System.out.println(userManagerWithNewDB.getUserInfo());
     }
 }
+//deneme
