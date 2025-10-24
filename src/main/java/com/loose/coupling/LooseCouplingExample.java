@@ -21,6 +21,9 @@ public class LooseCouplingExample {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationChallange.xml");
         UserManager userManagerFromSpring = (UserManager) context.getBean("userManagerWithUserDataProvider");
         System.out.println("buneeeee"+userManagerFromSpring.getUserInfo());
+
+        UserManager userManagerFromSpring1 = (UserManager) context.getBean("userManagerWithWebServiceDataProvider");
+        System.out.println("buneeeee"+userManagerFromSpring1.getUserInfo());
     }
 }
 //deneme
